@@ -30,6 +30,20 @@
 /* .content p{
     font-size: 10px;
 } */
+.link{
+    color: rgb(72, 3, 104);
+
+}
+.content-2{
+    margin-top: 130px;
+}
+.details{
+    font-size: x-small;
+    /* color: red; */
+}
+.coinjar{
+    border-radius: 50%;
+}
 
 
 @media screen and (max-width: 540px){
