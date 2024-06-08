@@ -10,9 +10,15 @@ import debitcard from "../../assets/debit-card.avif";
 import acct from "../../assets/acct.jpeg";
 import card from "../../assets/makers_kb2-scaled.jpg";
 import {FaCreditCard,FaArrowRight} from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 
 
 function Body() {
+     useEffect(() => {
+          AOS.init();
+     },[]);
   return (
     <div className='conatiner-fluid Body mt-5'>
           <div className='d-flex align-items-center justify-content-between m-5 row'>
@@ -20,17 +26,17 @@ function Body() {
                    <h1>The money App for Africans.</h1>
                    <p>Make free transfers, enjoy cashless payment options and earn interest on your savings with Kuda.</p>  
                    <div className="images d-flex align-items-center justify-content">
-                       <img src={appStore}  width={"90px"} className='m-2' height={"40px"} alt="" />
-                       <img src={playStore} width={"90px"} className='m-2' height={"40px"} alt="" />
+                       <img src={appStore}  width={"120px"} className='m-2 appstore' height={"50px"} alt="" />
+                       <img src={playStore} width={"120px"} className='m-2 playstore' height={"50px"} alt="" />
                    </div>
               </div>
              
               {/* <div className='> */}
-              <img src={logo} width className='col-12 col-sm-6 p-0 bg-danger m-0' height={"500px"} alt="logo" />
+              <img src={logo} className='col-12 col-sm-6 p-0 bg-danger m-0' height={"500px"} alt="logo" />
               {/* </div> */}
           </div>
           
-          <div className='content row my-5 mx-3 d-flex align-items-center justify-content-center'>
+          <div data-aos="fade-up"  className='content row my-5 mx-3 d-flex align-items-center justify-content-center'>
                <div className='col-11 col-sm-3 bg-white p-4 m-4 shadow'>
                     {/* <FaCreditCard className='icon m-0' size={30}/> */}
                     <p>Order a Kuda Visa card on the app with pickup and delivery options.</p>

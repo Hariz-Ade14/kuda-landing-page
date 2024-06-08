@@ -1,3 +1,120 @@
-.nav-item,.nav-link{
-    color: purple;
+.nav-item,.nav-link,.dropdown-toggle{
+    color: rgb(73,3,104);
+}
+.navbar{
+    height: 60px;
+}
+.brand{
+    color: rgb(73,3,104);
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.brand img,.flag{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+.hamburger{
+    display: none;
+
+}
+.hamburger div{
+    width: 23px;
+    height: 2px;
+    background-color: rgb(73,3,104);
+    /* margin-top: 6px; */
+}
+.hamburger div:last-child{
+    margin-top: 6px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: blue;
+    /* padding: 20px; */
+    /* height: 40px; */
+}
+.menu-list{
+    list-style-type: none;
+    /* display: inline; */
+    /* background-color: red; */
+    margin-top: 10px;
+    /* max-height: fit-content; */
+    /* height: 40px; */
+    
+}
+.item{
+    display: inline;
+    /* display: flex; */
+    margin: 20px;
+    /* background-color: green; */
+    margin: 30px;
+}
+
+.link{
+    text-decoration: none;
+}
+.container-fluid{
+    display: flex;
+    align-items: center;
+}
+.others{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    color: rgb(73,3,104);
+}
+.others .btn{
+    background-color: rgb(73,3,104);
+    color: white;
+}
+
+.off-canvas{
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    width: 100%;
+    z-index: 00;
+    height: 90%;
+    display: none;
+    /* margin: 30px; */
+    /* visibility:hidden; */
+}
+
+.buttons{
+    margin: 0;
+   
+}
+.buttons .btn:first-of-type{
+    background-color: rgb(73,3,104);
+    color: white;
+}
+.buttons .btn:last-of-type{
+    background-color: rgb(199, 214, 255);
+    color: rgb(73,3,104);
+}
+.menu-content span{
+    color: rgb(73,3,104);
+    /* text-align: left; */
+    /* float: left; */
+    font-weight: 500;
+}
+hr{
+    opacity: 0.1;
+}
+
+@media screen and (max-width:992px){
+       .menu-list{
+           display: none;
+       }
+       .hamburger{
+        display: block;
+       }
+       .others{
+        display: none;
+       }
 }

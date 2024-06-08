@@ -1,0 +1,20 @@
+h2{
+    color: rgb(72, 3, 104);
+    font-weight: bolder;
+    text-align: left;
+}
+.col-2 ul p{
+    font-weight: bold;
+    color: rgb(72, 3, 104);
+    text-align: left;
+}
+.nav-link{
+    text-align: left;
+}
+.footer{
+    margin-top: 100px;
+    border-top: 1px solid rgb(187, 187, 187);
+}
+.listHeader{
+    text-align: left;
+}
