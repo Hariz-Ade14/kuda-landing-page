@@ -22,24 +22,22 @@ function Body() {
   return (
     <div className='conatiner-fluid Body mt-5'>
           <div className='d-flex align-items-center justify-content-between m-5 row'>
-              <div className='col-12 col-sm-6 p-5'>
-                   <h1>The money App for Africans.</h1>
-                   <p>Make free transfers, enjoy cashless payment options and earn interest on your savings with Kuda.</p>  
-                   <div className="images d-flex align-items-center justify-content">
-                       <img src={appStore}  width={"120px"} className='m-2 appstore' height={"50px"} alt="" />
-                       <img src={playStore} width={"120px"} className='m-2 playstore' height={"50px"} alt="" />
+              <div className='col-12 col-sm-6 p-0'>
+                   <h1 className='pt-5'>The money App for Africans.</h1>
+                   <p className='mkft mt-2'>Make free transfers, enjoy cashless payment options and earn interest on your savings with Kuda.</p>  
+                   <div className="images w-100 p-3 m-0 d-flex align-items-center justify-content">
+                       <img src={appStore} className='appstore w-50' height={"50px"} alt="" />
+                       <img src={playStore} className='mx-1 w-50 playstore' height={"50px"} alt="" />
                    </div>
               </div>
              
-              {/* <div className='> */}
-              <img src={logo} className='col-12 col-sm-6 p-0 bg-danger m-0' height={"500px"} alt="logo" />
-              {/* </div> */}
+              <img src={logo} className='col-12 col-sm-6 p-0 m-0' height={"500px"} alt="logo" />
           </div>
           
           <div data-aos="fade-up"  className='content row my-5 mx-3 d-flex align-items-center justify-content-center'>
                <div className='col-11 col-sm-3 bg-white p-4 m-4 shadow'>
-                    {/* <FaCreditCard className='icon m-0' size={30}/> */}
-                    <p>Order a Kuda Visa card on the app with pickup and delivery options.</p>
+                    <p>Enjoy cashless payment options online and offline.</p>
+
                </div>
                <div className='col-11 col-sm-3 bg-white p-4 m-4 shadow'>
                     <p>Enjoy cashless payment options online and offline.</p>
@@ -66,21 +64,18 @@ function Body() {
                      <a href='/' className='link'>Open an account in minutes<FaArrowRight className='mx-2'/></a>
                    </p>
                </div>
-               <img src={debitcard} width className='col-12 col-sm-5 p-0 bg-danger m-0' height={"500px"} alt="logo" />
+               <img src={debitcard} width className='col-12 col-sm-5 p-0 m-0' height={"500px"} alt="logo" />
           </div>
 
 
           <div className="content-2 row mx-3 d-flex align-items-center justify-content-center">        
-               <img src={kuda} width className='col-12 col-sm-5 p-0 bg-danger m-0' height={"500px"} alt="logo" />
+               <img src={kuda} width className='col-12 col-sm-5 p-0 m-0' height={"500px"} alt="logo" />
                <div className='col-12 col-sm-5 p-5'>
                    <h1>
                        It’s your money, we just help you manage it.
                    </h1>
                    <p>Save it, spend it, send it. It’s up to you. Whatever you choose to do with your money, we’ll make sure it’s done better and free of charge. We take responsibility for that.</p>
-                   
-                   {/* <p>
-                     <a href='/' className='link'>Open an account in minutes<FaArrowRight className='mx-2'/></a>
-                   </p> */}
+                 
                </div>
           </div>
           <div className="content-2 row mx-3 d-flex align-items-center justify-content-center">        
@@ -94,10 +89,10 @@ function Body() {
                      <a href='/' className='link'>See all your savings<FaArrowRight className='mx-2'/></a>
                    </p>
                </div>
-               <img src={acct} width className='col-12 col-sm-5 p-0 bg-danger m-0' height={"500px"} alt="logo" />
+               <img src={acct} width className='col-12 col-sm-5 p-0 m-0' height={"500px"} alt="logo" />
           </div>
           <div className="content-2 row mx-3 d-flex align-items-center justify-content-center">        
-               <img src={card} width className='col-12 col-sm-5 p-0 bg-danger m-0' height={"500px"} alt="logo" />
+               <img src={card} width className='col-12 col-sm-5 p-0 m-0' height={"500px"} alt="logo" />
                
                <div className='col-12 col-sm-5 p-5'>
                    <h1>
@@ -121,7 +116,7 @@ function Body() {
                      <a href='/' className='link'>Get help<FaArrowRight className='mx-2'/></a>
                    </p>
                </div>
-               <img src={hello} width className='col-12 col-sm-5 p-0 bg-danger m-0' height={"400px"} alt="logo" />
+               <img src={hello} width className='col-12 col-sm-5 p-0 m-0' height={"400px"} alt="logo" />
           </div>
           <div className="content-2 row mb-5 mx-3 d-flex align-items-center justify-content-center">        
             <img src={coinjar} className='coinjar col-12 col-sm-5 mx-5 p-5 m-0' alt="logo" />

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, {useEffect} from "react";
 import "./Header.css";
 import kuda from "../../assets/kudalogo.png";
 import flag from "../../assets/flag.jpg";
@@ -6,24 +6,28 @@ import {useRef} from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-
 function Header() {
 	useEffect(() => {
-       AOS.init();
-	},[]);
+		AOS.init();
+	}, []);
 	const linkRef = useRef();
-
-	// console.log(linkRef.current.querySelectorAll("link"));
 
 	const navRef = useRef();
 	const menuRef = useRef();
+	const cancelRef = useRef();
 
 	const navMenu = () => {
-		// navRef.current.style.backgroundColor = "red";
-		console.log("hello");
-
 		menuRef.current.style.display = "block";
-		navRef.current.innerHTML = "X";
+		navRef.current.style.display = "none";
+
+		cancelRef.current.style.display = "block";
+	};
+
+	const cancel = () => {
+		menuRef.current.style.display = "none";
+		navRef.current.style.display = "block";
+
+		cancelRef.current.style.display = "none";
 	};
 
 	return (
@@ -62,61 +66,73 @@ function Header() {
 						</li>
 					</ul>
 
-					{/* </div> */}
-
 					<div className='others'>
-						{/* <div className="mt-3"> */}
 						<a href='/' className='link'>
 							Sign In
 						</a>
-						{/* </div> */}
 
 						<button className='btn'>Join Kuda</button>
 
 						<img alt='nigerian-flag' className='flag' src={flag} />
 					</div>
 
-					<div className='hamburger' ref={navRef} onClick={navMenu}>
-						<div></div>
-						<div></div>
+					<div className='bars'>
+						<div className='hamburger' ref={navRef} onClick={navMenu}>
+							<div></div>
+							<div></div>
+						</div>
+						<h4 className='cancel' ref={cancelRef} onClick={cancel}>
+							X
+						</h4>
 					</div>
 				</div>
 
-				<div className='off-canvas bg-white' data-aos="fade-in" ref={menuRef}>
-					<div className='buttons w-50 p-2 d-flex align-items-center'>
+				<div className='off-canvas bg-white' data-aos='fade-in' ref={menuRef}>
+					<div className='buttons w-100 w-sm-50 p-2 d-flex align-items-center'>
 						<button className='btn m-2 w-75'>Join Kuda</button>
 						<button className='btn w-75'>Sign in</button>
 					</div>
 
 					<div className='mt-4 mx-3 menu-content'>
-						<div className="d-flex align-items-center justify-content-between">
+						<div className='d-flex w-100 w-sm-50 align-items-center justify-content-between'>
 							<span>Personal</span>
-						    <span style={{fontSize: "20px"}} className='dropdown-toggle mx-2'></span>
+							<span
+								style={{fontSize: "20px"}}
+								className='dropdown-toggle mx-2'
+							></span>
 						</div>
 						<hr></hr>
-						<div className="d-flex align-items-center justify-content-between">
+						<div className='d-flex w-100 w-sm-50 align-items-center justify-content-between'>
 							<span>Business</span>
-						    <span style={{fontSize: "20px"}} className='dropdown-toggle mx-2'></span>
+							<span
+								style={{fontSize: "20px"}}
+								className='dropdown-toggle mx-2'
+							></span>
 						</div>
 						<hr></hr>
-						<div className="d-flex align-items-center justify-content-between">
+						<div className='d-flex w-100 w-sm-50 align-items-center justify-content-between'>
 							<span>Company</span>
-						    <span style={{fontSize: "20px"}} className='dropdown-toggle mx-2'></span>
+							<span
+								style={{fontSize: "20px"}}
+								className='dropdown-toggle mx-2'
+							></span>
 						</div>
 						<hr></hr>
-						<div className="d-flex align-items-center justify-content-between">
+						<div className='d-flex w-100 w-sm-50 align-items-center justify-content-between'>
 							<span>Developers</span>
 						</div>
 						<hr></hr>
-						<div className="d-flex align-items-center justify-content-between">
+						<div className='d-flex w-100 w-sm-50 align-items-center justify-content-between'>
 							<span>Contact Us</span>
 						</div>
 						<hr></hr>
-						<div className="d-flex align-items-center justify-content-between">
+						<div className='d-flex w-100 w-sm-50 align-items-center justify-content-between'>
 							<span>Help</span>
-						    <span style={{fontSize: "20px"}} className='dropdown-toggle mx-2'></span>
+							<span
+								style={{fontSize: "20px"}}
+								className='dropdown-toggle mx-2'
+							></span>
 						</div>
-						
 					</div>
 				</div>
 			</nav>

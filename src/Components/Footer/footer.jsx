@@ -126,10 +126,10 @@ function Footer() {
 
               </div>
               
-              <div className="images d-flex mt-5 align-items-center justify-content">
-                       <img src={appStore}  width={"90px"} className='m-2' height={"40px"} alt="" />
-                       <img src={playStore} width={"90px"} className='m-2' height={"40px"} alt="" />
-              </div>
+              <div className="images px-0 d-flex align-items-center justify-content">
+                       <img src={appStore}  width={"120px"} className='my-2 mx-0 appstore' height={"50px"} alt="" />
+                       <img src={playStore} width={"120px"} className='m-2 playstore' height={"50px"} alt="" />
+               </div>
          </div>
     </div>
   )
