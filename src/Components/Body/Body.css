@@ -58,4 +58,7 @@
         left: 10px;
         bottom: 0;
     }
+    .appstore,.playstore{
+        width: 150px;
+    }
 }

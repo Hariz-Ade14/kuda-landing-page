@@ -25,9 +25,9 @@ function Body() {
               <div className='col-12 col-sm-6 p-0'>
                    <h1 className='pt-5'>The money App for Africans.</h1>
                    <p className='mkft mt-2'>Make free transfers, enjoy cashless payment options and earn interest on your savings with Kuda.</p>  
-                   <div className="images w-100 p-3 m-0 d-flex align-items-center justify-content">
-                       <img src={appStore} className='appstore w-50' height={"50px"} alt="" />
-                       <img src={playStore} className='mx-1 w-50 playstore' height={"50px"} alt="" />
+                   <div className="images w-100 p-0 m-0 d-flex align-items-center justify-content">
+                       <img src={appStore} className='appstore' height={"50px"} alt="" />
+                       <img src={playStore} className='mx-1 playstore' height={"50px"} alt="" />
                    </div>
               </div>
              
