@@ -1,64 +1,257 @@
-.Body h1{
-    color: rgb(72, 3, 104);
+Body {
+	overflow-x: hidden;
 }
-.Body div:first-of-type h1{
-     text-align: left;
-     font-weight: bolder;
-}
-.Body div:first-of-type p{
-    text-align: center;
-}
-.mkft{
-    text-align: left;
-    font-size: 20px;
-}
-.content{
-    color: rgb(72, 3, 104);
-    
-}
-.col-11{
-    position: relative;
-    font-size: 20px;
-}
-.icon{
-    position: absolute;
-    top: 30;
-    left: 30px;
-
-}
-.link{
-    color: rgb(72, 3, 104);
-
-}
-.content-2{
-    margin-top: 130px;
-}
-.details{
-}
-.coinjar{
-    border-radius: 50%;
-}
-.appstore,.playstore{
-    border-radius: 10px;
+.Body h1 {
+	color: rgb(73, 0, 107);
+	font-size: 30px;
+	font-weight: bolder;
 }
 
+.mkft {
+	text-align: left;
+	font-size: 18px;
+	font-weight: 500;
+	margin: 30px 0px;
+	width: 69%;
+}
+.content {
+	color: rgb(72, 3, 104);
+}
+.col-11 {
+	position: relative;
+	font-size: 13px;
+	font-weight: 600;
+	height: 80px;
+}
+.icon {
+	position: absolute;
+	top: 30;
+	left: 30px;
+}
+.content-2 .link {
+	color: rgb(72, 3, 104);
 
-@media screen and (max-width: 540px){
-    .Body div:first-of-type h1{
-        text-align: center;
-        font-weight: bolder;
-   }
-   .col-11 p{
-       text-align: center;
-       font-size: 15px;
-   }
-   .icon{
-        position: absolute;
-        top: 30px;
-        left: 10px;
-        bottom: 0;
-    }
-    .appstore,.playstore{
-        width: 150px;
-    }
+	text-decoration: underline rgb(72, 3, 104);
+}
+.mx-2 {
+	color: rgb(72, 3, 104);
+}
+.content-2 {
+	margin-top: 100px;
+}
+.content-2 p {
+	text-align: center;
+}
+.details {
+	margin-top: 15px;
+}
+.coinjar {
+	border-radius: 50%;
+}
+.appstore,
+.playstore {
+	border-radius: 5px;
+	width: 130px;
+}
+.playstore-2,
+.appstore-2 {
+	border-radius: 5px;
+	width: 120px;
+}
+.firsthero {
+	margin: 150px 120px;
+	width: 80%;
+}
+.images {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+}
+.playstore {
+	margin-left: 14px;
+}
+.tmap {
+	border: 1px solid rgba(72, 3, 104, 0.164);
+	border-radius: 5px;
+	margin-top: 30px;
+	background-color: rgba(72, 3, 104, 0.075);
+	padding: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 80%;
+}
+.tmap p {
+	font-size: 15px;
+	width: 100%;
+}
+.images-2 {
+	display: none;
+}
+.tmap img.col-12 {
+	border-radius: 50%;
+	height: 400px;
+	width: 400px;
+}
+.tmap .btn {
+	background-color: rgb(73, 0, 107);
+	color: white;
+	display: flex;
+	margin: auto;
+	padding: 15px 0px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	width: 140px;
+	font-weight: bold;
+}
+
+.animation {
+	padding: 30px 0px;
+	position: relative;
+	margin: 40px 0px;
+	height: 300px;
+	max-width: 100%;
+}
+
+.card-1 {
+	width: 400px;
+	position: absolute;
+	left: 100px;
+	animation: Cards 20s linear infinite forwards;
+
+	height: 180px;
+	border-radius: 15px;
+
+	padding-bottom: 10px;
+}
+
+.card-1:nth-child(2) {
+	left: 500px;
+	width: 400px;
+	height: 180px;
+	margin-left: 30px;
+	border-radius: 15px;
+}
+.card-1:nth-child(3) {
+	left: 900px;
+	width: 400px;
+	height: 180px;
+	margin-left: 60px;
+	border-radius: 15px;
+}
+
+.card-1 p {
+	display: flex;
+	margin: auto;
+	text-align: center;
+	margin: 20px 10px;
+	font-size: 13px;
+}
+.cardImg {
+	width: 50px;
+	height: 50px;
+	margin: 10px 10px 15px;
+	border-radius: 50%;
+}
+.persons p {
+	font-weight: bold;
+}
+
+@keyframes Cards {
+	0% {
+		transform: translateX(-1300px);
+	}
+	100% {
+		transform: translateX(1300px);
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.Body div:first-of-type h1 {
+		text-align: center;
+		font-weight: bolder;
+	}
+	.col-11 p {
+		text-align: center;
+		font-size: 15px;
+	}
+	.mkft {
+		text-align: center;
+		width: 75%;
+		display: flex;
+		margin: 20px auto;
+	}
+	.icon {
+		position: absolute;
+		top: 30px;
+		left: 10px;
+		bottom: 0;
+	}
+	.appstore,
+	.playstore {
+		width: 135px;
+	}
+
+	.firsthero {
+		margin: 150px 0px;
+		width: 100%;
+	}
+	.images {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		margin: auto;
+	}
+
+	.images-2 {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		margin-top: 20px;
+	}
+
+	.playstore {
+		margin-left: 5px;
+	}
+	.appstore {
+		-webkit-margin-start: 40px;
+	}
+	.content-2 h1 {
+		font-size: 30px;
+	}
+	.tmap {
+		padding: 30px 10px;
+		width: 90%;
+		margin: 0px 20px;
+	}
+	.tmap p {
+		font-size: 12px;
+		width: 95%;
+		margin: auto;
+		display: flex;
+	}
+	.tmap img.col-12 {
+		display: none;
+	}
+	.tmap .btn {
+		display: none;
+	}
+
+	Body {
+		overflow-x: hidden;
+	}
+	.animation {
+		overflow-x: hidden;
+	}
+	@keyframes Cards {
+		0% {
+			transform: translateX(-400px);
+		}
+
+		100% {
+			transform: translateX(400px);
+		}
+	}
 }

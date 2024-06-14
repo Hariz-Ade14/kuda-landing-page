@@ -18,3 +18,44 @@ h2{
 .listHeader{
     text-align: left;
 }
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.footer-row{
+    width: 80%;
+}
+.kudalogo{
+    width: 33px;
+    height: 33px;
+}
+.brandname{
+	font-weight: bold;
+	font-size: 25px;
+    margin-top: 7px;
+}
+.listHeader{
+    font-weight: 500;
+    color: rgb(72, 3, 104);
+}
+.nav-link{
+    color: black;
+    font-size: 12px;
+}
+.images{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+@media screen and (max-width: 576px){
+       .images{
+        margin: 0px;
+       }
+       .footer-row{
+        width: 100%;
+       }
+       
+}

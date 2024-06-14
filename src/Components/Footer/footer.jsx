@@ -7,11 +7,11 @@ import playStore from "../../assets/googleplay.jpg";
 
 function Footer() {
   return (
-    <div className='footer container-fluid p-5 shadow'>
-         <div className="row">
+    <div className='footer container-fluid px-3 py-5 p-sm-5'>
+         <div className="footer-row row">
               <div className="col-12 col-sm-2 d-flex align-items-top justify-content-start m-0 p-0">
-                   <img src={kudalogo} width={"30px"} className='m-1' height={"33px"} alt="" />
-                   <h2 className='m-0 p-0'>Kuda.</h2>
+                   <img src={kudalogo} className='kudalogo' alt="" />
+                   <h2 className='m-0 p-0 brandname mt-1'>Kuda.</h2>
               </div>
               <div className="col-6 col-sm-2 mt-sm-0 mt-4 p-0">
                    <ul className='navbar-nav'>
@@ -32,7 +32,6 @@ function Footer() {
                           <a href="/" className="nav-link">Kuda Card</a>
                        </li>
                    </ul>
-
               </div>
               <div className="col-6 col-sm-2 mt-sm-0 mt-4 p-0">
                    <ul className='navbar-nav'>
@@ -126,7 +125,7 @@ function Footer() {
 
               </div>
               
-              <div className="images px-0 d-flex align-items-center justify-content">
+              <div className="images px-0 mt-5">
                        <img src={appStore}  width={"120px"} className='my-2 mx-0 appstore' height={"50px"} alt="" />
                        <img src={playStore} width={"120px"} className='m-2 playstore' height={"50px"} alt="" />
                </div>
